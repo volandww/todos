@@ -3,9 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Todos</title>
+    <link rel="stylesheet" href="./css/main.css">
   </head>
-  <body>
+  <body onload="renderToDoLists()">
+    <div>
+      <div>
+        <h1 id="header">todos</h1>
+        <input id="todoInput" type="text" placeholder="What needs to be done?">
+      </div>
 
-    <script src="main.js"></script>
+      <div>
+        <section id="tasks">
+
+        </section>
+      </div>
+
+      <div>
+        <footer id="footer">
+          <span>item</span>
+          <button class="btn" type="button" name="All">All</button>
+          <button class="btn" type="button" name="Active">Active</button>
+          <button class="btn" type="button" name="Completed">Completed</button>
+        </footer>
+      </div>
+    </div>
+
+    <!-- generete id -->
+    <script src="https://chancejs.com/chance.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/changeValue.js"></script>
+    <script src="./js/deleteTask.js"></script>
+    <script src="./js/checkedTask.js"></script>
+    <script src="./js/renderToDoLists.js"></script>
   </body>
 </html>

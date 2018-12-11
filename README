@@ -1,2 +1,7 @@
-Like this: http://todomvc.com/examples/react/#/
-but using JS not react
+work
+  - adding new tasks (only press Enter on keyboard);
+  - delete tasks (press delete button or change task = empty string);
+  - change task (double click on task; save changes by click Enter or click
+  out side the input).
+
+  

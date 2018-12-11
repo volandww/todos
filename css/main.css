@@ -1,0 +1,152 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px 'Helvatica Neue', Helvatica, Arial, sans-serif;
+  line-height: 1.4em;
+  background: #f5f5f5;
+  color: #4d4d4d;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+#footer {
+  display: none;
+}
+
+#header {
+  width: 100%;
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.15);
+  text-rendering: optimizeLegibility;
+}
+
+#todoInput, .edit {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.4em;
+  border: 0;
+  color: inherit;
+  padding: 6px;
+  border: 1px solid #999;
+  box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+#todoInput {
+  padding: 16px 16px 16px 60px;
+  border: none;
+  background: #fff;
+  box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
+}
+
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-list li {
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.todo-list:last-child {
+  border-bottom: none;
+}
+
+.toggle {
+  position: absolute;
+  float: left;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #909090;
+  border-radius: 100%;
+  opacity: 0.2;
+  content: "\2714";
+}
+
+.todo-list li label {
+    word-break: break-all;
+    padding: 15px 15px 15px 60px;
+    display: block;
+    line-height: 1.2;
+    transition: color 0.4s;
+    background-color: #fff;
+}
+
+.complated-task {
+  color: #d9d9d9;
+  text-decoration: line-through;
+  opacity: 0.2;
+  transition: color 0.2s ease-out;
+}
+
+.todo-list li .destroy {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    font-size: 30px;
+    color: #cc9a9a;
+    margin-bottom: 11px;
+    border: 0;
+    background: none;
+    transition: color 0.2s ease-out;
+}
+
+.todo-list li .destroy:hover {
+	color: #af5b5e;
+}
+
+.todo-list li .destroy:after {
+	content: '×';
+}
+
+.todo-list li:hover .destroy {
+	display: block;
+}
+
+.todo-list li.editing .view {
+	display: none;
+}
+.edit {
+  display: none;
+}
+
+.editing {
+  word-break: break-all;
+  padding: 15px 15px 15px 60px;
+  display: block;
+  margin: auto 0;
+  padding:auto 0;
+  line-height: 1.2;
+  transition: color 0.4s;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 470px;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.4em;
+}
